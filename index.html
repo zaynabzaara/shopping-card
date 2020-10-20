@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shopping cart</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <section class="shopping-app" id="shopping-app">
+            <div class="shopping-bag" id="shopping-bag">
+                <h3>Shopping Bag total :<span id="total-price">0 </span><span>$</span></h3>
+            </div>
+            <div class="item" id="item">
+                <div class="container">
+                   <button class="button" id="x-btn" onclick=" retire('item')"></button>   
+                   <svg id="fav-btn" onclick=" fav('fav-btn')" xmlns="http://www.w3.org/2000/svg" width="26"
+                        height="26" fill="grey" viewbox="0 0 24 24">
+                        <path
+                            d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z" />
+
+                    </svg>
+                </div>
+                <img src="img/manteau.jpg" alt="manteau image">
+                <div class="">
+                    <p>Coat</p>
+                    <p>grey</p>
+                </div>
+                <div class="container">
+                    <button class="button" id="plus-btn" onclick="addItem( 'item_qte1','item-price1','200')"></button>
+                    <p class="item-qte" id="item_qte1">0</p>
+                    <button class="button" id="minus-btn"
+                        onclick="retireItem( 'item_qte1','item-price1','200')"></button><span>$</span>
+                    <p class="item-price" id="item-price1">0</p>
+                </div>
+
+
+            </div>
+            <div class="item" id="item2">
+                <div class="container">
+                    <button class="button" id="x-btn" onclick=" retire('item2') "></button>    
+                    <svg id="fav-btn2" onclick=" fav('fav-btn2')" xmlns="http://www.w3.org/2000/svg" width="26"
+                    height="26" fill="grey" viewbox="0 0 24 24">
+                    <path
+                        d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z" />
+
+                </svg>              
+                </div>
+                <img src="img/joggings.jpg"
+                    alt="joggings image">
+                <div class="">
+                    <p>tracksuits</p>
+                    <p>Any color</p>
+                </div>
+                <div class="container">
+                    <button class="button" id="plus-btn" onclick="addItem( 'item-qte2','item-price2','120')"></button>
+                    <p class="item-qte" id="item-qte2">0</p>
+                    <button class="button" id="minus-btn"
+                        onclick="retireItem( 'item-qte2','item-price2','120')"></button><span>$</span>
+                    <span class="item-price" id="item-price2">0</span>
+                </div>
+            </div>
+            <div class="item" id="item3">
+                <div class="container">
+                    <button class="button" id="x-btn" onclick=" retire('item3')"></button>
+                    <svg id="fav-btn3" onclick=" fav('fav-btn3')" xmlns="http://www.w3.org/2000/svg" width="26"
+                    height="26" fill="grey" viewbox="0 0 24 24">
+                    <path
+                        d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z" />
+
+                </svg> 
+                </div>
+                <img src="img/bonnet.jpg" alt="bonnet image">
+                <div class="">
+                    <p>cap</p>
+                    <p>grey</p>
+                </div>
+                <div class="container">
+                    <button class="button" id="plus-btn" onclick="addItem( 'item-qte3','item-price3','30')"></button>
+                    <p class="item-qte" id="item-qte3">0</p>
+                    <button class="button" id="minus-btn"
+                        onclick="retireItem( 'item-qte3','item-price3','30')"></button>
+                    <span>$</span>
+                    <p class="item-price" id="item-price3"> 0 </p>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>
